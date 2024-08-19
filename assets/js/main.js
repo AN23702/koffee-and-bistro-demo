@@ -115,3 +115,22 @@ window.addEventListener('scroll', function() {
     header.classList.remove('scroll-header');
   }
 });
+
+// sub menu
+const menu = document.querySelector(".menu");
+const subMenuLv1 = document.querySelector(".sub-menu-lv1");
+
+let isShown = false;
+
+menu.addEventListener('click', () => {
+  isShown = !isShown;
+  subMenuLv1.style.display = isShown ? 'block' : 'none';
+});
+
+document.addEventListener('click', (event) => {
+  // Kiểm tra xem có click vào phần tử A hay không
+  if (event.target !== menu) {
+    isShown = false;
+    subMenuLv1.style.display = 'none';
+  }
+});
