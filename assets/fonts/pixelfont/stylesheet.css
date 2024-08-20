@@ -1,0 +1,26 @@
+@font-face {
+    font-family: 'Home Video';
+    src: url('HomeVideo-Regular.eot');
+    src: url('HomeVideo-Regular.eot?#iefix') format('embedded-opentype'),
+        url('HomeVideo-Regular.woff2') format('woff2'),
+        url('HomeVideo-Regular.woff') format('woff'),
+        url('HomeVideo-Regular.ttf') format('truetype'),
+        url('HomeVideo-Regular.svg#HomeVideo-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Home Video';
+    src: url('HomeVideo-Bold.eot');
+    src: url('HomeVideo-Bold.eot?#iefix') format('embedded-opentype'),
+        url('HomeVideo-Bold.woff2') format('woff2'),
+        url('HomeVideo-Bold.woff') format('woff'),
+        url('HomeVideo-Bold.ttf') format('truetype'),
+        url('HomeVideo-Bold.svg#HomeVideo-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
