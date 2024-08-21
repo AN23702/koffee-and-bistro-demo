@@ -143,3 +143,22 @@ window.onscroll = function() {
       document.querySelector('.back-to-top-bar').style.right = '-9999px';
     }
   };
+
+// mini game
+const openMiniGame = document.querySelector('.mini-game');
+const closeMiniGame = document.querySelector('.close-mini-game');
+const miniGameContent = document.querySelector('.mini-game-content');
+
+openMiniGame.addEventListener('click', () => {
+  miniGameContent.style.transform = 'scale(1, 1)';
+});
+
+closeMiniGame.addEventListener('click', () => {
+  miniGameContent.style.transform = 'scale(0, 0)';
+});
+
+// document.addEventListener('click', (event) => {
+//   if (event.target !== openMiniGame && event.target !== miniGameContent) {
+//     miniGameContent.style.transform = 'scale(0, 0)';
+//   }
+// });
