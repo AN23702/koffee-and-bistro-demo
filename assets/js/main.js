@@ -21,30 +21,6 @@ $('.fix-banner').owlCarousel({
     }
 })
 
-// best seller
-$('.best-seller-banner').owlCarousel({
-    loop:true,
-    dots:false,
-    autoplay: true,
-    autoplayTimeout: 3000,
-    margin:10,
-    nav:false,
-    responsive:{
-        0:{
-            items:2
-        },
-        600:{
-            items:3
-        },
-        770:{
-            items:4
-        },
-        1500:{
-          items:4
-      }
-    }
-})
-
 // best seller title
 var textWrapper = document.querySelector('.best-seller-title .letters');
 textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");

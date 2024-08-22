@@ -208,6 +208,7 @@
     height: 68px;
     background-color: #fff;
     position: relative;
+    border-bottom: 1px solid grey;
 }
 
 .scroll-header{
