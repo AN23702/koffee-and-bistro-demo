@@ -49,3 +49,66 @@ openMiniGame.addEventListener('click', () => {
 closeMiniGame.addEventListener('click', () => {
   miniGameContent.style.transform = 'scale(0, 0)';
 });
+
+// background color active
+const allColorActive = document.getElementById('allColorActive');
+const coffeeColorActive = document.querySelector('.coffee-color-active');
+const teaColorActive = document.querySelector('.tea-color-active');
+const freezeColorActive = document.querySelector('.freeze-color-active');
+const phindiColorActive = document.querySelector('.phindi-color-active');
+const espressoColorActive = document.querySelector('.espresso-color-active');
+const cakeColorActive = document.querySelector('.cake-color-active');
+
+const topBar = document.querySelector('.top-bar');
+const menuProducts = document.querySelector('.menu-products');
+const footer = document.querySelector('.footer');
+const backToTopBar = document.querySelector('.back-to-top-bar');
+const messenger = document.querySelector('.messenger');
+
+
+function changeColor(activeColor) {
+  topBar.style.backgroundColor = activeColor === 'all' ? '#634832' :activeColor === 'coffee' ? '#634832' :activeColor === 'tea' ? '#00712D' :activeColor === 'freeze' ? '#6DC5D1' :activeColor === 'phindi' ? '#CA955C' :activeColor === 'espresso' ? '#000' :activeColor ==='cake' ? '#FABC3F' : '#634832';
+  menuProducts.style.backgroundColor = activeColor === 'all' ? '#634832' :activeColor === 'coffee' ? '#634832' :activeColor === 'tea' ? '#00712D' :activeColor === 'freeze' ? '#6DC5D1' :activeColor === 'phindi' ? '#CA955C' :activeColor === 'espresso' ? '#000' :activeColor ==='cake' ? '#FABC3F' : '#634832';
+  footer.style.backgroundColor = activeColor === 'all' ? '#634832' :activeColor === 'coffee' ? '#634832' :activeColor === 'tea' ? '#00712D' :activeColor === 'freeze' ? '#6DC5D1' :activeColor === 'phindi' ? '#CA955C' :activeColor === 'espresso' ? '#000' :activeColor ==='cake' ? '#FABC3F' : '#634832';
+  backToTopBar.style.backgroundColor = activeColor === 'all' ? '#634832' :activeColor === 'coffee' ? '#634832' :activeColor === 'tea' ? '#00712D' :activeColor === 'freeze' ? '#6DC5D1' :activeColor === 'phindi' ? '#CA955C' :activeColor === 'espresso' ? '#000' :activeColor ==='cake' ? '#FABC3F' : '#634832';
+  messenger.style.backgroundColor = activeColor === 'all' ? '#634832' :activeColor === 'coffee' ? '#634832' :activeColor === 'tea' ? '#00712D' :activeColor === 'freeze' ? '#6DC5D1' :activeColor === 'phindi' ? '#CA955C' :activeColor === 'espresso' ? '#000' :activeColor ==='cake' ? '#FABC3F' : '#634832';
+
+  // Lưu trữ trạng thái màu sắc rõ ràng
+  localStorage.setItem('activeColor', activeColor);
+}
+allColorActive.addEventListener('click', ()=>{
+  changeColor('all');
+});
+
+coffeeColorActive.addEventListener('click', () => {
+  changeColor('coffee');
+});
+
+teaColorActive.addEventListener('click', () => {
+  changeColor('tea');
+});
+
+freezeColorActive.addEventListener('click', () => {
+  changeColor('freeze');
+});
+
+phindiColorActive.addEventListener('click', () => {
+  changeColor('phindi');
+});
+
+espressoColorActive.addEventListener('click', () => {
+  changeColor('espresso');
+});
+
+cakeColorActive.addEventListener('click', () => {
+  changeColor('cake');
+});
+
+// ... tương tự cho các màu khác
+
+window.onload = () => {
+  const activeColor = localStorage.getItem('activeColor');
+  if (activeColor) {
+    changeColor(activeColor);  // Gọi hàm để áp dụng màu đã lưu
+  }
+};
