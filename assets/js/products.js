@@ -67,11 +67,11 @@ const messenger = document.querySelector('.messenger');
 
 
 function changeColor(activeColor) {
-  topBar.style.backgroundColor = activeColor === 'all' ? '#634832' :activeColor === 'coffee' ? '#634832' :activeColor === 'tea' ? '#00712D' :activeColor === 'freeze' ? '#6DC5D1' :activeColor === 'phindi' ? '#CA955C' :activeColor === 'espresso' ? '#000' :activeColor ==='cake' ? '#FABC3F' : '#634832';
-  menuProducts.style.backgroundColor = activeColor === 'all' ? '#634832' :activeColor === 'coffee' ? '#634832' :activeColor === 'tea' ? '#00712D' :activeColor === 'freeze' ? '#6DC5D1' :activeColor === 'phindi' ? '#CA955C' :activeColor === 'espresso' ? '#000' :activeColor ==='cake' ? '#FABC3F' : '#634832';
-  footer.style.backgroundColor = activeColor === 'all' ? '#634832' :activeColor === 'coffee' ? '#634832' :activeColor === 'tea' ? '#00712D' :activeColor === 'freeze' ? '#6DC5D1' :activeColor === 'phindi' ? '#CA955C' :activeColor === 'espresso' ? '#000' :activeColor ==='cake' ? '#FABC3F' : '#634832';
-  backToTopBar.style.backgroundColor = activeColor === 'all' ? '#634832' :activeColor === 'coffee' ? '#634832' :activeColor === 'tea' ? '#00712D' :activeColor === 'freeze' ? '#6DC5D1' :activeColor === 'phindi' ? '#CA955C' :activeColor === 'espresso' ? '#000' :activeColor ==='cake' ? '#FABC3F' : '#634832';
-  messenger.style.backgroundColor = activeColor === 'all' ? '#634832' :activeColor === 'coffee' ? '#634832' :activeColor === 'tea' ? '#00712D' :activeColor === 'freeze' ? '#6DC5D1' :activeColor === 'phindi' ? '#CA955C' :activeColor === 'espresso' ? '#000' :activeColor ==='cake' ? '#FABC3F' : '#634832';
+  topBar.style.backgroundColor = activeColor === 'all' ? '#634832' :activeColor === 'coffee' ? '#634832' :activeColor === 'tea' ? '#00712D' :activeColor === 'freeze' ? '#6DC5D1' :activeColor === 'phindi' ? '#CA955C' :activeColor === 'espresso' ? '#000' :activeColor ==='cake' ? '#FF8A8A' : '#634832';
+  menuProducts.style.backgroundColor = activeColor === 'all' ? '#634832' :activeColor === 'coffee' ? '#634832' :activeColor === 'tea' ? '#00712D' :activeColor === 'freeze' ? '#6DC5D1' :activeColor === 'phindi' ? '#CA955C' :activeColor === 'espresso' ? '#000' :activeColor ==='cake' ? '#FF8A8A' : '#634832';
+  footer.style.backgroundColor = activeColor === 'all' ? '#634832' :activeColor === 'coffee' ? '#634832' :activeColor === 'tea' ? '#00712D' :activeColor === 'freeze' ? '#6DC5D1' :activeColor === 'phindi' ? '#CA955C' :activeColor === 'espresso' ? '#000' :activeColor ==='cake' ? '#FF8A8A' : '#634832';
+  backToTopBar.style.backgroundColor = activeColor === 'all' ? '#634832' :activeColor === 'coffee' ? '#634832' :activeColor === 'tea' ? '#00712D' :activeColor === 'freeze' ? '#6DC5D1' :activeColor === 'phindi' ? '#CA955C' :activeColor === 'espresso' ? '#000' :activeColor ==='cake' ? '#FF8A8A' : '#634832';
+  messenger.style.backgroundColor = activeColor === 'all' ? '#634832' :activeColor === 'coffee' ? '#634832' :activeColor === 'tea' ? '#00712D' :activeColor === 'freeze' ? '#6DC5D1' :activeColor === 'phindi' ? '#CA955C' :activeColor === 'espresso' ? '#000' :activeColor ==='cake' ? '#FF8A8A' : '#634832';
 
   // Lưu trữ trạng thái màu sắc rõ ràng
   localStorage.setItem('activeColor', activeColor);
