@@ -64,6 +64,7 @@ const menuProducts = document.querySelector('.menu-products');
 const footer = document.querySelector('.footer');
 const backToTopBar = document.querySelector('.back-to-top-bar');
 const messenger = document.querySelector('.messenger');
+
 const bannerProduct = document.querySelector('.banner-product');
 
 
@@ -73,6 +74,14 @@ function changeColor(activeColor) {
   footer.style.backgroundColor = activeColor === 'all' ? '#634832' :activeColor === 'coffee' ? '#634832' :activeColor === 'tea' ? '#00712D' :activeColor === 'freeze' ? '#6DC5D1' :activeColor === 'phindi' ? '#CA955C' :activeColor === 'espresso' ? '#000' :activeColor ==='cake' ? '#FF8A8A' : '#634832';
   backToTopBar.style.backgroundColor = activeColor === 'all' ? '#634832' :activeColor === 'coffee' ? '#634832' :activeColor === 'tea' ? '#00712D' :activeColor === 'freeze' ? '#6DC5D1' :activeColor === 'phindi' ? '#CA955C' :activeColor === 'espresso' ? '#000' :activeColor ==='cake' ? '#FF8A8A' : '#634832';
   messenger.style.backgroundColor = activeColor === 'all' ? '#634832' :activeColor === 'coffee' ? '#634832' :activeColor === 'tea' ? '#00712D' :activeColor === 'freeze' ? '#6DC5D1' :activeColor === 'phindi' ? '#CA955C' :activeColor === 'espresso' ? '#000' :activeColor ==='cake' ? '#FF8A8A' : '#634832';
+
+  bannerProduct.style.backgroundImage = activeColor === 'all' ? 'url(../images/coffee-banner.png)' :
+  activeColor === 'coffee' ? 'url(../images/coffee-banner.png)' :
+  activeColor === 'tea' ? 'url(../images/tea-banner.png)' :
+  activeColor === 'freeze' ? 'url(../images/freeze-banner.png)' :
+  activeColor === 'phindi' ? 'url(../images/phindi-banner.png)' :
+  activeColor === 'espresso' ? 'url(../images/espresso-banner.png)' :
+  activeColor === 'cake' ? 'url(../images/cake-banner.png)' : 'url(../images/coffee-banner.png)';
 
 
   localStorage.setItem('activeColor', activeColor);
