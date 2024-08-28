@@ -336,11 +336,17 @@
     color: black;
 }
 
+/* Banner product */
+.banner-product{
+    width: 100%;
+    height: 80px;
+    background-image: url(../images/coffee\ banner\ \(1\).png);
+}
+
 /* menu products */
 .menu-products{
     padding: 60px 0;
     background-color: #634832;
-    margin-top: 60px;
     margin-bottom: 60px;
 }
 

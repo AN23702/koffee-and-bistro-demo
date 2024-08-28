@@ -64,6 +64,7 @@ const menuProducts = document.querySelector('.menu-products');
 const footer = document.querySelector('.footer');
 const backToTopBar = document.querySelector('.back-to-top-bar');
 const messenger = document.querySelector('.messenger');
+const bannerProduct = document.querySelector('.banner-product');
 
 
 function changeColor(activeColor) {
@@ -73,7 +74,7 @@ function changeColor(activeColor) {
   backToTopBar.style.backgroundColor = activeColor === 'all' ? '#634832' :activeColor === 'coffee' ? '#634832' :activeColor === 'tea' ? '#00712D' :activeColor === 'freeze' ? '#6DC5D1' :activeColor === 'phindi' ? '#CA955C' :activeColor === 'espresso' ? '#000' :activeColor ==='cake' ? '#FF8A8A' : '#634832';
   messenger.style.backgroundColor = activeColor === 'all' ? '#634832' :activeColor === 'coffee' ? '#634832' :activeColor === 'tea' ? '#00712D' :activeColor === 'freeze' ? '#6DC5D1' :activeColor === 'phindi' ? '#CA955C' :activeColor === 'espresso' ? '#000' :activeColor ==='cake' ? '#FF8A8A' : '#634832';
 
-  // Lưu trữ trạng thái màu sắc rõ ràng
+
   localStorage.setItem('activeColor', activeColor);
 }
 allColorActive.addEventListener('click', ()=>{
@@ -104,11 +105,10 @@ cakeColorActive.addEventListener('click', () => {
   changeColor('cake');
 });
 
-// ... tương tự cho các màu khác
 
 window.onload = () => {
   const activeColor = localStorage.getItem('activeColor');
   if (activeColor) {
-    changeColor(activeColor);  // Gọi hàm để áp dụng màu đã lưu
+    changeColor(activeColor);
   }
 };

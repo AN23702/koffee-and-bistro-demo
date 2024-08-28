@@ -392,7 +392,7 @@
 
 /* prepare-at-home-products */
 .prepare-at-home-products{
-    padding: 60px 0;
+    padding: 28px 0;
     margin-bottom: 60px;
 }
 
@@ -432,6 +432,31 @@
     max-height: 243px;
 }
 
+.prepare-at-home-products .fix-margin{
+    margin-top: 60px;
+}
+
+.prepare-at-home-products .prepare-at-home-products-card .preparation-instructions-slide{
+    position: relative;
+}
+
+.prepare-at-home-products .prepare-at-home-products-card .preparation-instructions-slide .owl-dots{
+    position: absolute;
+    bottom: 64px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.prepare-at-home-products .prepare-at-home-products-card .preparation-instructions-slide .owl-dots .owl-dot.active span{
+    background-color: #E57905;
+}
+
+.prepare-at-home-products .prepare-at-home-products-card .preparation-instructions-slide .owl-dots .owl-dot span{
+    width: 16px;
+    height: 2px;
+    border-radius: 0;
+    background-color: #fff;
+}
 
 
 /* Footer */
