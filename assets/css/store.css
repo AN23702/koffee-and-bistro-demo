@@ -153,13 +153,6 @@
     font-family: 'Montserrat';
 }
 
-/* color active */
-.active.coffee-color-active{
-    & .top-bar{
-        background-color: red;
-    }
-}
-
 /* Top-bar */
 .top-bar{
     width: 100%;
@@ -336,151 +329,100 @@
     color: black;
 }
 
-/* Banner product */
-.banner-product{
+/* Store title */
+.background-img{
+    position: relative;
+}
+
+.background-img .fix-background-img{
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: 80px;
-    background-image: url(../images/coffee-banner.png);
+    height: 100%;
+    background-image: url(../images/background\ img\ store.png);
+    filter: brightness(50%);
 }
 
-/* menu products */
-.menu-products{
+.store-title {
+    font-weight: 700;
+    font-size: 3.5em;
+    display: flex;
+    justify-content: center;
+
+  }
+  
+  .store-title .text-wrapper {
+    position: relative;
+    display: inline-block;
+    padding-top: 0.1em;
+    padding-right: 0.05em;
+    padding-bottom: 0.15em;
+  }
+  
+  .store-title .line {
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 3px;
+    background-color: #fff;
+    transform-origin: 0 50%;
+  }
+  
+  .store-title .line1 { 
+    top: 0; 
+    left: 0;
+  }
+  
+  .store-title .letter {
+    display: inline-block;
+    line-height: 1em;
+  }
+
+  .store-title .letters{
+    font-size: 40px;
+    font-weight: 600;
+    color: #fff;
+  }
+
+  /* store list */
+  .store-list{
     padding: 60px 0;
-    background-color: #634832;
     margin-bottom: 60px;
-}
+  }
 
-.menu-products .menu-side-bar{
-    border-right: 1px solid #fff;
-}
+  /* store list side bar */
+  .store-list .store-list-side-bar{
+    border-right: 1px solid black;
+  }
 
-.menu-products .menu-side-bar .menu-main{
+  .store-list .store-list-side-bar .menu-main{
     list-style-type: none;
     position: sticky;
     top: 80px;
-}
+  }
 
-
-.menu-products .menu-side-bar .menu-main li{
-    margin-bottom: 12px;
-    font-size: 14px;
-}
-
-.menu-products .menu-side-bar .menu-main li a{
-    text-decoration: none;
-    color: #fff;
-}
-
-.menu-products .menu-side-bar .menu-main .active{
+  .store-list .store-list-side-bar .menu-main h1{
     font-size: 16px;
     font-weight: 600;
-}
+  }
 
-.menu-products .right-menu-products{
-    display: flex;
-    flex-direction: column;
-}
-
-.menu-products .right-menu-products .block-menu-item{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-bottom: 24px;
-}
-
-.menu-products .right-menu-products .block-menu-item .block-menu-item-title{
-    color: #fff;
-    font-size: 24px;
-    font-weight: 600;
-    margin-bottom: 24px;
-}
-
-.menu-products .right-menu-products .block-menu-item .menu-list-collection{
-    width: 100%;
-}
-
-.menu-products .right-menu-products .block-menu-item .menu-list-collection .product-card .product-detail{
-    color: #fff;
-}
-
-
-/* product card */
-.product-card{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 16px;
-    position: relative;
-    margin-bottom: 24px;
-}
-
-.product-card .product-img img{
-    width: 100%;
-    object-fit: cover;
-    border-radius: 20px;
-    box-shadow: 3px 3px 3px gray;
-}
-
-.product-card .product-detail .name-product {
-    font-weight: 600;
+  .store-list .store-list-side-bar .menu-main select{
+    border: 1px solid black;
+    border-radius: 4px;
     font-size: 14px;
-}
+    margin-top: 8px;
+    padding: 4px;
+  }
 
-.product-card .product-detail .price-product{
+  .store-list .store-list-side-bar .menu-main select .option{
     font-size: 14px;
-}
+  }
 
-/* label */
-.label-new-product{
-    position: absolute;
-    top: -12px;
-    right: 0;
-}
-
-.label-new-product i{
-    color: #FEEC59;
-    font-size: 60px;
-}
-
-.label-new-product .icon-label{
-    position: relative;
-}
-
-.label-new-product .icon-label p{
-    font-size: 14px;
-    color: #447510;
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-/* best seller label */
-.label-best-seller{
-    position: absolute;
-    top: -12px;
-    right: 0;
-}
-
-.label-best-seller i{
-    color: #FF0000;
-    font-size: 60px;
-}
-
-.label-best-seller .icon-label{
-    position: relative;
-}
-
-.label-best-seller .icon-label p{
-    font-size: 10px;
-    color: #fff;
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
+  .store-list .store-list-side-bar .menu-main .district-choice{
+    margin-top: 24px;
+  }
 
 /* Footer */
 .footer{
