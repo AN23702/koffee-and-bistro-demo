@@ -329,155 +329,40 @@
     color: black;
 }
 
-/* Store title */
-.background-img{
-    position: relative;
-}
 
-.background-img .fix-background-img{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url(../images/background\ img\ store.png);
-    filter: brightness(50%);
-}
 
-.store-title {
-    font-weight: 700;
-    font-size: 3.5em;
-    display: flex;
-    justify-content: center;
-
-  }
-  
-  .store-title .text-wrapper {
-    position: relative;
-    display: inline-block;
-    padding-top: 0.1em;
-    padding-right: 0.05em;
-    padding-bottom: 0.15em;
-  }
-  
-  .store-title .line {
-    opacity: 0;
-    position: absolute;
-    left: 0;
-    height: 100%;
-    width: 3px;
-    background-color: #fff;
-    transform-origin: 0 50%;
-  }
-  
-  .store-title .line1 { 
-    top: 0; 
-    left: 0;
-  }
-  
-  .store-title .letter {
-    display: inline-block;
-    line-height: 1em;
-  }
-
-  .store-title .letters{
-    font-size: 40px;
-    font-weight: 600;
-    color: #fff;
-  }
-
-  /* store list */
-  .store-list{
+  /* store details */
+  .store-details{
     padding: 60px 0;
     margin-bottom: 60px;
   }
 
-  /* store list side bar */
-  .store-list .store-list-side-bar{
-    border-right: 1px solid black;
+  .store-details .img-store img{
+    width: 100%;
+    max-height: 310px;
+    object-fit: cover;
+    margin-bottom: 20px;
   }
 
-  .store-list .store-list-side-bar .menu-main{
-    list-style-type: none;
+  /* store details right */
+  .store-details .store-details-right{
     position: sticky;
     top: 80px;
   }
 
-  .store-list .store-list-side-bar .menu-main h1{
+  .store-details .store-details-right .store-name{
+    font-size: 24px;
+    font-weight: 600;
+  }
+
+  .store-details .store-details-right h3{
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 700;
+    margin-top: 24px
   }
 
-  .store-list .store-list-side-bar .menu-main select{
-    border: 1px solid black;
-    border-radius: 4px;
-    font-size: 14px;
-    margin-top: 8px;
-    padding: 4px;
-  }
-
-  .store-list .store-list-side-bar .menu-main select .option{
-    font-size: 14px;
-  }
-
-  .store-list .store-list-side-bar .menu-main .district-choice{
-    margin-top: 24px;
-  }
-
-/* right store list */
-    /* store card */
-    .store-list .right-store-list .store-card{
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 40px;
-    }
-
-
-
-/* slide img store */
-.store-list .right-store-list .store-card .slide-img-store .item img{
-    border-radius: 20px;
-    object-fit: cover;
-    width: 100%;
-    max-height: 243px;
-}
-
-.store-list .right-store-list .store-card .slide-img-store{
-    position: relative;
-}
-
-.store-list .right-store-list .store-card .slide-img-store .owl-dots{
-    position: absolute;
-    bottom: -8px;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.store-list .right-store-list .store-card .slide-img-store .owl-dots .owl-dot.active span{
-    background-color: #E57905;
-}
-
-.store-list .right-store-list .store-card .slide-img-store .owl-dots .owl-dot span{
-    width: 16px;
-    height: 2px;
-    border-radius: 0;
-    background-color: #fff;
-}
-
-/* store name */
-.store-list .right-store-list .store-card .store-name{
-    font-size: 18px;
-    font-weight: 600;
-    margin-top: 20px;
-}
-
-/* store address */
-.store-list .right-store-list .store-card .store-address{
-    font-size: 14px;
-}
-
-/* view map */
-.store-list .right-store-list .store-card .view-map{
+  /* view map */
+  .store-details .store-details-right .view-map{
     background-color: #E57905;
     text-decoration: none;
     border-radius: 8px;
@@ -485,13 +370,15 @@
     justify-content: center;
     align-items: center;
     padding: 5px 0;
-}
+  }
 
-.store-list .right-store-list .store-card .view-map p{
+  .store-details .store-details-right .view-map p{
     font-size: 14px;
     color: #fff;
     margin-bottom: 0;
-}
+  }
+
+
 
 /* Footer */
 .footer{

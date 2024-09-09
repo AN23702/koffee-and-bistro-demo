@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>store</title>
+    <title>store details</title>
 
     <!-- Import fontawesome -->
     <link rel="stylesheet" href="./lib/fontawesome/css/fontawesome.css">
@@ -18,7 +18,7 @@
      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
 
     <!-- import styles.css -->
-     <link rel="stylesheet" href="./assets/css/store.css">
+     <link rel="stylesheet" href="./assets/css/store-details.css">
 </head>
 <body>
     
@@ -287,170 +287,49 @@
         </div>
     </div>
 
-
-    <!-- store title  -->
-    <div class="background-img">
-        <div class="fix-background-img"></div>
+    <!-- Store details -->
+    <div class="store-details">
         <div class="container">
             <div class="row">
-                <div class="col-12 col-sm-12 col-md-12 store-title">
-                    <span class="text-wrapper">
-                        <span class="line line1"></span>
-                        <span class="letters">Hệ thống cửa hàng</span>
-                      </span>
+                <!-- img store -->
+                <div class="col-12 col-sm-6 col-md-6 img-store">
+                    <img src="./assets/images/tải xuống.jpg" alt="">
+                    <img src="./assets/images/tải xuống.jpg" alt="">
+                    <img src="./assets/images/tải xuống.jpg" alt="">
+                    <img src="./assets/images/tải xuống.jpg" alt="">
+                    <img src="./assets/images/tải xuống.jpg" alt="">
                 </div>
+
+                <!-- store details right -->
+                <div class="col-12 col-sm-6 col-md-6 store-details-right">
+                    <div class="store-details-right">
+                                            <!-- store name -->
+                    <h1 class="store-name">
+                        HCM SIGNATURE by The Coffee House
+                    </h1>
+
+                    <!-- store introduce-->
+                    <p class="store-introduce">
+                        Nhà tin rằng “cuộc hẹn cà phê” luôn có cho mình những tiêu chuẩn, phiên bản khác nhau, chúng luôn biến hoá mỗi ngày. Và SIGNATURE by The Coffee House là nơi bạn tìm thấy phiên bản đặc biệt của Cuộc hẹn tròn đầy giữa những ngày hối hả.Hôm nay bạn có hẹn chưa? Mình cà phê nhé!
+                    </p>
+
+                    <!-- store address -->
+                    <h3>Địa chỉ</h3>
+                    <p class="store-address">
+                        TTTM Crescent Mall, 101 Tôn Dật Tiên, Phường Tân Phú, Quận 7, Thành phố Hồ Chí Minh
+                    </p>
+
+                    <!-- view map -->
+                    <a class="view-map" href="https://www.google.com/maps/place/Highland+coffee+Hateco+Apollo/@21.0489384,105.7144403,14z/data=!4m6!3m5!1s0x313455b4c168a9c1:0x964df2f86b22833!8m2!3d21.0489404!4d105.7350475!16s%2Fg%2F11sc95yxh9?entry=ttu&g_ep=EgoyMDI0MDkwNC4wIKXMDSoASAFQAw%3D%3D" target="_blank">
+                        <p>Xem bản đồ</p>
+                    </a>
+                    </div>
+
+                </div>
+                
             </div>
         </div>
     </div>
-
-
-    <!-- store list -->
-    <div class="store-list">
-        <div class="container">
-            <div class="row">
-                <!-- store list side bar -->
-                <div class="col-12 col-sm-3 col-md-3 store-list-side-bar">
-                    <ul class="menu-main">
-                        <li class="city-choice">
-                            <h1>Thành phố</h1>
-                            <select class="filer-city">
-                                <option value="Hà Nội">Hà Nội</option>
-                                <option value="TP Hồ Chí Minh">TP Hồ Chí Minh</option>
-                            </select>
-                        </li>
-                        <li class="district-choice">
-                            <h1>Quận/Huyện</h1>
-                            <select class="filer-district">
-                                <option value="Hà Nội">Hà Nội</option>
-                                <option value="TP Hồ Chí Minh">TP Hồ Chí Minh</option>
-                            </select>
-                        </li>
-                    </ul>
-                </div>
-
-                <!-- right store list -->
-                 <div class="col-12 col-sm-9 col-md-9 right-store-list">
-
-                        <div class="container">
-                            <div class="row">
-
-                                <!-- store card -->
-                                <div class="store-card col-6 col-sm-6 col-md-6">
-                                    <!-- slide img store -->
-                                    <div class="owl-carousel owl-theme slide-img-store">
-                                        <div class="item">
-                                            <img src="./assets/images/img slide.jpg" alt="">
-                                        </div>
-                                        <div class="item">
-                                            <img src="./assets/images/img slide.jpg" alt="">
-                                        </div>
-                                        <div class="item">
-                                            <img src="./assets/images/img slide.jpg" alt="">
-                                        </div>
-                                    </div>
-
-                                    <!-- store name -->
-                                     <h1 class="store-name">HCM SIGNATURE by The Coffee House</h1>
-
-                                    <!-- store address -->
-                                    <p class="store-address">TTTM Crescent Mall, 101 Tôn Dật Tiên, Phường Tân Phú, Quận 7, Thành phố Hồ Chí Minh</p>
-
-                                    <!-- view map -->
-                                     <a class="view-map" href="https://www.google.com/maps/place/Highland+coffee+Hateco+Apollo/@21.0489454,105.7324726,17z/data=!3m1!4b1!4m6!3m5!1s0x313455b4c168a9c1:0x964df2f86b22833!8m2!3d21.0489404!4d105.7350475!16s%2Fg%2F11sc95yxh9?entry=ttu&g_ep=EgoyMDI0MDkwMy4wIKXMDSoASAFQAw%3D%3D" target="_blank">
-                                        <p>Xem bản đồ</p>
-                                     </a>
-                                </div>
-
-                                <!-- store card -->
-                                <div class="store-card col-6 col-sm-6 col-md-6">
-                                    <!-- slide img store -->
-                                    <div class="owl-carousel owl-theme slide-img-store">
-                                        <div class="item">
-                                            <img src="./assets/images/img slide.jpg" alt="">
-                                        </div>
-                                        <div class="item">
-                                            <img src="./assets/images/img slide.jpg" alt="">
-                                        </div>
-                                        <div class="item">
-                                            <img src="./assets/images/img slide.jpg" alt="">
-                                        </div>
-                                    </div>
-
-                                    <!-- store name -->
-                                        <h1 class="store-name">HCM SIGNATURE by The Coffee House</h1>
-
-                                    <!-- store address -->
-                                    <p class="store-address">TTTM Crescent Mall, 101 Tôn Dật Tiên, Phường Tân Phú, Quận 7, Thành phố Hồ Chí Minh</p>
-
-                                    <!-- view map -->
-                                        <a class="view-map" href="https://www.google.com/maps/place/Highland+coffee+Hateco+Apollo/@21.0489454,105.7324726,17z/data=!3m1!4b1!4m6!3m5!1s0x313455b4c168a9c1:0x964df2f86b22833!8m2!3d21.0489404!4d105.7350475!16s%2Fg%2F11sc95yxh9?entry=ttu&g_ep=EgoyMDI0MDkwMy4wIKXMDSoASAFQAw%3D%3D" target="_blank">
-                                        <p>Xem bản đồ</p>
-                                        </a>
-                                </div>
-                                <!-- store card -->
-                                <div class="store-card col-6 col-sm-6 col-md-6">
-                                    <!-- slide img store -->
-                                    <div class="owl-carousel owl-theme slide-img-store">
-                                        <div class="item">
-                                            <img src="./assets/images/img slide.jpg" alt="">
-                                        </div>
-                                        <div class="item">
-                                            <img src="./assets/images/img slide.jpg" alt="">
-                                        </div>
-                                        <div class="item">
-                                            <img src="./assets/images/img slide.jpg" alt="">
-                                        </div>
-                                    </div>
-
-                                    <!-- store name -->
-                                     <h1 class="store-name">HCM SIGNATURE by The Coffee House</h1>
-
-                                    <!-- store address -->
-                                    <p class="store-address">TTTM Crescent Mall, 101 Tôn Dật Tiên, Phường Tân Phú, Quận 7, Thành phố Hồ Chí Minh</p>
-
-                                    <!-- view map -->
-                                     <a class="view-map" href="https://www.google.com/maps/place/Highland+coffee+Hateco+Apollo/@21.0489454,105.7324726,17z/data=!3m1!4b1!4m6!3m5!1s0x313455b4c168a9c1:0x964df2f86b22833!8m2!3d21.0489404!4d105.7350475!16s%2Fg%2F11sc95yxh9?entry=ttu&g_ep=EgoyMDI0MDkwMy4wIKXMDSoASAFQAw%3D%3D" target="_blank">
-                                        <p>Xem bản đồ</p>
-                                     </a>
-                                </div>
-
-                                <!-- store card -->
-                                <div class="store-card col-6 col-sm-6 col-md-6">
-                                    <!-- slide img store -->
-                                    <div class="owl-carousel owl-theme slide-img-store">
-                                        <div class="item">
-                                            <img src="./assets/images/img slide.jpg" alt="">
-                                        </div>
-                                        <div class="item">
-                                            <img src="./assets/images/img slide.jpg" alt="">
-                                        </div>
-                                        <div class="item">
-                                            <img src="./assets/images/img slide.jpg" alt="">
-                                        </div>
-                                    </div>
-
-                                    <!-- store name -->
-                                        <h1 class="store-name">HCM SIGNATURE by The Coffee House</h1>
-
-                                    <!-- store address -->
-                                    <p class="store-address">TTTM Crescent Mall, 101 Tôn Dật Tiên, Phường Tân Phú, Quận 7, Thành phố Hồ Chí Minh</p>
-
-                                    <!-- view map -->
-                                        <a class="view-map" href="https://www.google.com/maps/place/Highland+coffee+Hateco+Apollo/@21.0489454,105.7324726,17z/data=!3m1!4b1!4m6!3m5!1s0x313455b4c168a9c1:0x964df2f86b22833!8m2!3d21.0489404!4d105.7350475!16s%2Fg%2F11sc95yxh9?entry=ttu&g_ep=EgoyMDI0MDkwMy4wIKXMDSoASAFQAw%3D%3D" target="_blank">
-                                        <p>Xem bản đồ</p>
-                                        </a>
-                                </div>
-                                
-
-                            </div>
-                        </div>
-
-                 </div>
-            </div>
-        </div>
-    </div>
-    
-
 
     <!-- Footer -->
     <div class="footer">
@@ -644,6 +523,6 @@
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
 
     <!-- import main.js -->
-     <script src="./assets/js/store.js"></script>
+     <script src="./assets/js/storeDetails.js"></script>
 </body>
 </html>

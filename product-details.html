@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>store</title>
+    <title>product details</title>
 
     <!-- Import fontawesome -->
     <link rel="stylesheet" href="./lib/fontawesome/css/fontawesome.css">
@@ -18,7 +18,7 @@
      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
 
     <!-- import styles.css -->
-     <link rel="stylesheet" href="./assets/css/store.css">
+     <link rel="stylesheet" href="./assets/css/product-details.css">
 </head>
 <body>
     
@@ -287,170 +287,100 @@
         </div>
     </div>
 
-
-    <!-- store title  -->
-    <div class="background-img">
-        <div class="fix-background-img"></div>
+    <!-- product details -->
+    <div class="product-details">
         <div class="container">
             <div class="row">
-                <div class="col-12 col-sm-12 col-md-12 store-title">
-                    <span class="text-wrapper">
-                        <span class="line line1"></span>
-                        <span class="letters">Hệ thống cửa hàng</span>
-                      </span>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <!-- store list -->
-    <div class="store-list">
-        <div class="container">
-            <div class="row">
-                <!-- store list side bar -->
-                <div class="col-12 col-sm-3 col-md-3 store-list-side-bar">
-                    <ul class="menu-main">
-                        <li class="city-choice">
-                            <h1>Thành phố</h1>
-                            <select class="filer-city">
-                                <option value="Hà Nội">Hà Nội</option>
-                                <option value="TP Hồ Chí Minh">TP Hồ Chí Minh</option>
-                            </select>
-                        </li>
-                        <li class="district-choice">
-                            <h1>Quận/Huyện</h1>
-                            <select class="filer-district">
-                                <option value="Hà Nội">Hà Nội</option>
-                                <option value="TP Hồ Chí Minh">TP Hồ Chí Minh</option>
-                            </select>
-                        </li>
-                    </ul>
+                <!-- img product -->
+                <div class="col-12 col-sm-6 col-md-6 img-product">
+                    <img src="./assets/images/tra sen vang.png" alt="">
                 </div>
 
-                <!-- right store list -->
-                 <div class="col-12 col-sm-9 col-md-9 right-store-list">
+                <!-- product details right -->
+                <div class="col-12 col-sm-6 col-md-6 product-details-right">
+                    <!-- product name -->
+                    <h1 class="product-name">
+                        Trà sen vàng
+                    </h1>
 
-                        <div class="container">
-                            <div class="row">
+                    <!-- product price -->
+                    <p class="product-price">
+                        45.000đ
+                    </p>
 
-                                <!-- store card -->
-                                <div class="store-card col-6 col-sm-6 col-md-6">
-                                    <!-- slide img store -->
-                                    <div class="owl-carousel owl-theme slide-img-store">
-                                        <div class="item">
-                                            <img src="./assets/images/img slide.jpg" alt="">
-                                        </div>
-                                        <div class="item">
-                                            <img src="./assets/images/img slide.jpg" alt="">
-                                        </div>
-                                        <div class="item">
-                                            <img src="./assets/images/img slide.jpg" alt="">
-                                        </div>
-                                    </div>
+                    <!-- options sizes -->
+                    <div class="options-sizes">
+                        <p>Chọn size (bắt buộc)</p>
 
-                                    <!-- store name -->
-                                     <h1 class="store-name">HCM SIGNATURE by The Coffee House</h1>
+                        <div class="options-sizes-box">
 
-                                    <!-- store address -->
-                                    <p class="store-address">TTTM Crescent Mall, 101 Tôn Dật Tiên, Phường Tân Phú, Quận 7, Thành phố Hồ Chí Minh</p>
 
-                                    <!-- view map -->
-                                     <a class="view-map" href="https://www.google.com/maps/place/Highland+coffee+Hateco+Apollo/@21.0489454,105.7324726,17z/data=!3m1!4b1!4m6!3m5!1s0x313455b4c168a9c1:0x964df2f86b22833!8m2!3d21.0489404!4d105.7350475!16s%2Fg%2F11sc95yxh9?entry=ttu&g_ep=EgoyMDI0MDkwMy4wIKXMDSoASAFQAw%3D%3D" target="_blank">
-                                        <p>Xem bản đồ</p>
-                                     </a>
-                                </div>
+                            <div class="size-choice small-size">
+                                <i class="fa-solid fa-glass-water"></i>
+                                Nhỏ - 45.000đ
+                            </div>
 
-                                <!-- store card -->
-                                <div class="store-card col-6 col-sm-6 col-md-6">
-                                    <!-- slide img store -->
-                                    <div class="owl-carousel owl-theme slide-img-store">
-                                        <div class="item">
-                                            <img src="./assets/images/img slide.jpg" alt="">
-                                        </div>
-                                        <div class="item">
-                                            <img src="./assets/images/img slide.jpg" alt="">
-                                        </div>
-                                        <div class="item">
-                                            <img src="./assets/images/img slide.jpg" alt="">
-                                        </div>
-                                    </div>
+                            <div class="size-choice medium-size">
+                                <i class="fa-solid fa-glass-water"></i>
+                                Vừa - 55.000đ
+                            </div>
 
-                                    <!-- store name -->
-                                        <h1 class="store-name">HCM SIGNATURE by The Coffee House</h1>
+                            <div class="size-choice big-size">
+                                <i class="fa-solid fa-glass-water"></i>
+                                Lớn - 65.000đ
+                            </div>
 
-                                    <!-- store address -->
-                                    <p class="store-address">TTTM Crescent Mall, 101 Tôn Dật Tiên, Phường Tân Phú, Quận 7, Thành phố Hồ Chí Minh</p>
+                        </div>
+                    </div>
 
-                                    <!-- view map -->
-                                        <a class="view-map" href="https://www.google.com/maps/place/Highland+coffee+Hateco+Apollo/@21.0489454,105.7324726,17z/data=!3m1!4b1!4m6!3m5!1s0x313455b4c168a9c1:0x964df2f86b22833!8m2!3d21.0489404!4d105.7350475!16s%2Fg%2F11sc95yxh9?entry=ttu&g_ep=EgoyMDI0MDkwMy4wIKXMDSoASAFQAw%3D%3D" target="_blank">
-                                        <p>Xem bản đồ</p>
-                                        </a>
-                                </div>
-                                <!-- store card -->
-                                <div class="store-card col-6 col-sm-6 col-md-6">
-                                    <!-- slide img store -->
-                                    <div class="owl-carousel owl-theme slide-img-store">
-                                        <div class="item">
-                                            <img src="./assets/images/img slide.jpg" alt="">
-                                        </div>
-                                        <div class="item">
-                                            <img src="./assets/images/img slide.jpg" alt="">
-                                        </div>
-                                        <div class="item">
-                                            <img src="./assets/images/img slide.jpg" alt="">
-                                        </div>
-                                    </div>
+                    <!-- options topping -->
+                    <div class="options-topping">
+                        <p>Topping</p>
 
-                                    <!-- store name -->
-                                     <h1 class="store-name">HCM SIGNATURE by The Coffee House</h1>
+                        <div class="options-topping-box">
 
-                                    <!-- store address -->
-                                    <p class="store-address">TTTM Crescent Mall, 101 Tôn Dật Tiên, Phường Tân Phú, Quận 7, Thành phố Hồ Chí Minh</p>
+                            <div class="topping-choice">Hạt sen - 10.000đ</div>
+                            <div class="topping-choice">Củ năng - 10.000đ</div>
+                            <div class="topping-choice">Đào - 10.000đ</div>
+                            <div class="topping-choice">Thạch đào - 10.000đ</div>
+                            <div class="topping-choice">Vải - 10.000đ</div>
+                            <div class="topping-choice">Thạch vải - 10.000đ</div>
+                            <div class="topping-choice">Đậu đỏ - 10.000đ</div>
 
-                                    <!-- view map -->
-                                     <a class="view-map" href="https://www.google.com/maps/place/Highland+coffee+Hateco+Apollo/@21.0489454,105.7324726,17z/data=!3m1!4b1!4m6!3m5!1s0x313455b4c168a9c1:0x964df2f86b22833!8m2!3d21.0489404!4d105.7350475!16s%2Fg%2F11sc95yxh9?entry=ttu&g_ep=EgoyMDI0MDkwMy4wIKXMDSoASAFQAw%3D%3D" target="_blank">
-                                        <p>Xem bản đồ</p>
-                                     </a>
-                                </div>
+                        </div>
+                    </div>
 
-                                <!-- store card -->
-                                <div class="store-card col-6 col-sm-6 col-md-6">
-                                    <!-- slide img store -->
-                                    <div class="owl-carousel owl-theme slide-img-store">
-                                        <div class="item">
-                                            <img src="./assets/images/img slide.jpg" alt="">
-                                        </div>
-                                        <div class="item">
-                                            <img src="./assets/images/img slide.jpg" alt="">
-                                        </div>
-                                        <div class="item">
-                                            <img src="./assets/images/img slide.jpg" alt="">
-                                        </div>
-                                    </div>
+                    <!-- more options -->
+                    <div class="more-options">
+                        <p>Tùy chọn</p>
 
-                                    <!-- store name -->
-                                        <h1 class="store-name">HCM SIGNATURE by The Coffee House</h1>
-
-                                    <!-- store address -->
-                                    <p class="store-address">TTTM Crescent Mall, 101 Tôn Dật Tiên, Phường Tân Phú, Quận 7, Thành phố Hồ Chí Minh</p>
-
-                                    <!-- view map -->
-                                        <a class="view-map" href="https://www.google.com/maps/place/Highland+coffee+Hateco+Apollo/@21.0489454,105.7324726,17z/data=!3m1!4b1!4m6!3m5!1s0x313455b4c168a9c1:0x964df2f86b22833!8m2!3d21.0489404!4d105.7350475!16s%2Fg%2F11sc95yxh9?entry=ttu&g_ep=EgoyMDI0MDkwMy4wIKXMDSoASAFQAw%3D%3D" target="_blank">
-                                        <p>Xem bản đồ</p>
-                                        </a>
-                                </div>
-                                
-
+                        <div class="more-options-box">
+                            <div class="more-options-choice">
+                                Ít đá
+                            </div>
+                            <div class="more-options-choice">
+                                Không đá
+                            </div>
+                            <div class="more-options-choice">
+                                Ít ngọt
+                            </div>
+                            <div class="more-options-choice">
+                                Thêm ngọt
+                            </div>
+                            <div class="more-options-choice">
+                                Không ngọt
                             </div>
                         </div>
+                    </div>
 
-                 </div>
+                    <!-- product to cart -->
+                    <div class="product-to-cart">
+                        <p>Thêm vào giỏ hàng</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-    
-
 
     <!-- Footer -->
     <div class="footer">
@@ -644,6 +574,6 @@
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
 
     <!-- import main.js -->
-     <script src="./assets/js/store.js"></script>
+     <script src="./assets/js/productDetails.js"></script>
 </body>
 </html>
