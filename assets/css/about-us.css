@@ -363,23 +363,141 @@
 }
 
 /* about us */
+/* history */
 .about-us .history{
     display: flex;
 }
 
 .about-us .history .history-content{
-    width: 60%;
+    width: 55%;
+    height: 338px;
+    padding-left: 32px;
+    padding-top: 32px;
+}
+
+.about-us .history .history-content h1{
+    font-size: 48px;
+}
+
+.about-us .history .history-content p{
+    font-size: 16px;
+    margin-top: 16px;
 }
 
 .about-us .history .history-img{
-    width: 40%;
+    width: 45%;
+    position: relative;
+    height: 338px;
 }
 
 .about-us .history .history-img img{
     width: 100%;
+    height: 100%;
     object-fit: cover;
+}
 
-    
+/* fix history img */
+.about-us .history .history-img .fix-history-img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(99,72,50,0) 51%);
+}
+
+/* service */
+.about-us .service{
+    display: flex;
+}
+
+.about-us .service .service-content{
+    width: 55%;
+    height: 338px;
+    padding-right: 32px;
+    padding-top: 32px;
+    background-color: #634832;
+}
+
+.about-us .service .service-content h1{
+    font-size: 48px;
+    color: #fff;
+}
+
+.about-us .service .service-content p{
+    font-size: 16px;
+    margin-top: 16px;
+    color: #fff;
+}
+
+.about-us .service .service-img{
+    width: 45%;
+    position: relative;
+    height: 338px;
+}
+
+.about-us .service .service-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* fix service img */
+.about-us .service .service-img .fix-service-img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,0) 50%, rgba(99,72,50,1) 100%);}
+
+/* job */
+.about-us .job{
+    display: flex;
+}
+
+.about-us .job .job-content{
+    width: 55%;
+    height: 338px;
+    padding-left: 32px;
+    padding-top: 32px;
+}
+
+.about-us .job .job-content h1{
+    font-size: 48px;
+}
+
+.about-us .job .job-content p{
+    font-size: 16px;
+    margin-top: 16px;
+}
+
+.about-us .job .job-img{
+    width: 45%;
+    position: relative;
+    height: 338px;
+}
+
+.about-us .job .job-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* fix job img */
+.about-us .job .job-img .fix-job-img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(99,72,50,0) 51%);
 }
 
 /* Footer */
