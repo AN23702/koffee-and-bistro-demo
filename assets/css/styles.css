@@ -182,6 +182,7 @@
 .top-bar .fix-display-top-bar .account-and-cart .account{
     display: flex;
     align-items: center;
+    cursor: pointer;
 }
 
 .top-bar .fix-display-top-bar .account-and-cart .cart{
@@ -831,6 +832,93 @@
     animation: shake 1s infinite ease-out;
 }
 
+/* sign in */
+.sign-in{
+    display: none;
+    animation: fadeIn .3s ease-in-out;
+}
+
+.sign-in .fix-display-sign-in{
+    position: fixed;
+    width: 420px;
+    height: auto;
+    background-color: #fff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sign-in .fix-display-sign-in img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.sign-in .fix-display-sign-in p{
+    font-size: 16px;
+    margin-bottom: 0;
+    margin-top: 16px;
+}
+
+.sign-in .fix-display-sign-in h1{
+    font-weight: 600;
+    font-size: 36px;
+    margin-bottom: 16px;
+}
+
+.sign-in .fix-display-sign-in input{
+    background: transparent;
+    border: 1px solid grey;
+    outline: none;
+    padding: 8px 16px;
+    width: 80%;
+    margin-bottom: 8px;
+    font-size: 14px;
+    border-radius: 8px;
+}
+
+.sign-in .fix-display-sign-in button{
+    background-color: #E57905;
+    text-decoration: none;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 0;
+    width: 80%;
+    border: none;
+
+    font-size: 14px;
+    color: #fff;
+    margin-bottom: 8px;
+    margin-top: 8px;
+}
+
+.sign-in .fix-display-sign-in .footer-sign-in{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sign-in .fix-display-sign-in .footer-sign-in button{
+    width: 48%;
+    font-size: 12px;
+    padding: 5px 0;
+    margin-top: 0;
+}
+
+.sign-in .fix-display-sign-in .footer-sign-in .sign-up{
+    background-color: #36A420;
+}
+
+.sign-in .fix-display-sign-in .footer-sign-in .forget-pass{
+    background-color: #FF0000;
+}
+
 /* animation */
 @keyframes fadeInDown {
     from {
@@ -840,6 +928,26 @@
     to {
       opacity: 1;
       transform: translateY(0);
+    }
+  }
+
+  @keyframes fadeOutUp {
+    from {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    to {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+  } 
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
     }
   }
 

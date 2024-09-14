@@ -133,8 +133,16 @@ closeMiniGame.addEventListener('click', () => {
   miniGameContent.style.transform = 'scale(0, 0)';
 });
 
-// document.addEventListener('click', (event) => {
-//   if (event.target !== openMiniGame && event.target !== miniGameContent) {
-//     miniGameContent.style.transform = 'scale(0, 0)';
-//   }
-// });
+// sign in
+const account = document.querySelector('.account');
+const signIn = document.querySelector('.sign-in');
+
+account.addEventListener('click', () => {
+  signIn.style.display = 'block';
+});
+
+document.addEventListener('click', (event) => {
+  if (event.target !== account && !account.contains(event.target)) {
+    signIn.style.display = 'none';
+  }
+});
